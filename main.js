@@ -1,5 +1,5 @@
 const main = document.getElementById("main")
-const first = document.createElement("div")
+const content = document.createElement("div")
 const footer = document.createElement("div")
 
 document.body.style.margin = "0px"
@@ -15,14 +15,14 @@ document.body.style.background = " #252B42"
 
 
 
-first.style.width = "100%"
-first.style.height = "auto"
-first.style.display = "flex"
-first.style.flexDirection = "column"
-first.style.alignItems = "center"
-first.style.justifyContent = "center"
-first.style.gap = "40px"
-first.style.paddingTop = "180px"
+content.style.width = "100%"
+content.style.height = "auto"
+content.style.display = "flex"
+content.style.flexDirection = "column"
+content.style.alignItems = "center"
+content.style.justifyContent = "center"
+content.style.gap = "40px"
+content.style.paddingTop = "180px"
 
 
 const welcome = document.createElement("h3")
@@ -144,12 +144,12 @@ boxes("#23A6F0","./icons/card.svg", "#fff", "training Courses","white", "white",
 
 
 
-first.appendChild(welcome)
-first.appendChild(title)
-first.appendChild(paragraph)
-first.appendChild(btndiv)
-first.appendChild(container)
-main.appendChild(first)
+content.appendChild(welcome)
+content.appendChild(title)
+content.appendChild(paragraph)
+content.appendChild(btndiv)
+content.appendChild(container)
+main.appendChild(content)
 
 
 footer.style.width = "100%"
