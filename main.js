@@ -1,6 +1,6 @@
 const main = document.getElementById("main")
 const first = document.createElement("div")
-const second = document.createElement("div")
+const footer = document.createElement("div")
 
 document.body.style.margin = "0px"
 document.body.style.padding = "0px"
@@ -152,15 +152,15 @@ first.appendChild(container)
 main.appendChild(first)
 
 
-second.style.width = "100%"
-second.style.height = "auto"
-second.style.display = "flex"
-second.style.flexDirection = "column"
-second.style.alignItems = "center"
-second.style.justifyContent = "center"
-second.style.backgroundColor = "white"
-second.style.paddingTop = "160px"
-second.style.gap = "10px"
+footer.style.width = "100%"
+footer.style.height = "auto"
+footer.style.display = "flex"
+footer.style.flexDirection = "column"
+footer.style.alignItems = "center"
+footer.style.justifyContent = "center"
+footer.style.backgroundColor = "white"
+footer.style.paddingTop = "160px"
+footer.style.gap = "10px"
 
 const advice = document.createElement("h3")
     advice.innerHTML = "Practice Advice"
@@ -192,24 +192,24 @@ const advice = document.createElement("h3")
     const inp = document.createElement("input")
     inp.style.width = "570px"
     inp.style.height = "58px"
-    inp.style.textAlign = "left"
     inp.style.border = "none"
     inp.style.fontSize = "14px"
     inp.placeholder = "Your Mail"
+    inp.style.paddingLeft = "20px"
 
-    const button = document.createElement("button")
-    button.style.width = "117px"
-    button.style.height = "60px"
-    button.style.background = "#23A6F0"
-    button.style.border = "#23A6F0"
-    button.innerHTML = "Subscribe"
-    button.style.fontsize = "14px"
-    button.style.color = "white"
+    const subbutton = document.createElement("button")
+    subbutton.style.width = "117px"
+    subbutton.style.height = "60px"
+    subbutton.style.background = "#23A6F0"
+    subbutton.style.border = "#23A6F0"
+    subbutton.innerHTML = "Subscribe"
+    subbutton.style.fontsize = "14px"
+    subbutton.style.color = "white"
 
 input.appendChild(inp)
-input.appendChild(button)
-second.appendChild(advice)
-second.appendChild(title1)
-second.appendChild(paragraph1)
-second.appendChild(input)
-main.appendChild(second)
+input.appendChild(subbutton)
+footer.appendChild(advice)
+footer.appendChild(title1)
+footer.appendChild(paragraph1)
+footer.appendChild(input)
+main.appendChild(footer)
